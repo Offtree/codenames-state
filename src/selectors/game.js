@@ -1,4 +1,4 @@
-import { find, isUndefined, isEqual } from 'lodash';
+import { find, isUndefined, isEqual, get } from 'lodash';
 import { RED_TEAM, BLUE_TEAM, BOMB, FREE } from '../constants';
 
 const isInPositionList = (all, search) => {
@@ -13,7 +13,7 @@ export const getOwnedBy = (state, position) => {
   return FREE
 };
 
-export const getMarked = (state, position) => {
+export const isMarked = (state, position) => {
   return !isUndefined(isInPositionList(state.game.turns.pastTurns, position));
 };
 
@@ -24,3 +24,5 @@ export const getStaged = (state) => {
 export const isStaged = (state, position) => {
   return isEqual(getStaged(state), position);
 };
+
+export const getFirstPlayer = (state) => get(state, state.game.goals.firstPlayer);
