@@ -1,4 +1,4 @@
-export default [
+export const WORDS = [
   'AFRICA',
   'AGENT',
   'AIR',
