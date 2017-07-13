@@ -2,7 +2,7 @@ import {
   redA100,
   indigoA100,
   grey800,
-  // orangeA100
+  orangeA100
 } from 'material-ui/styles/colors';
 
 export const BLUE_TEAM = "B";
@@ -14,5 +14,6 @@ export const BOARD_SIZE = 5;
 export const COLOR_MAP = {
   [BLUE_TEAM]: indigoA100,
   [RED_TEAM]: redA100,
-  [BOMB]: grey800
+  [BOMB]: grey800,
+  staged: orangeA100
 }
