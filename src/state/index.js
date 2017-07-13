@@ -9,11 +9,13 @@ const reducers = combineReducers({
   game: gameReducer
 });
 
-export default () => {
+export const makeGameStore = (isReciever = false) => {
+  const middleWare = isReciever ? [sendToReciverMiddleware] : [];
+
   return createStore(
     reducers,
     applyMiddleware(
-      sendToReciverMiddleware      
+      ...middleWare      
     )
   );
 };
