@@ -27,7 +27,7 @@ export const buildGoals = () => {
   const grid = shuffle(getAvailableSpots());
   return {
     firstPlayer,
-    [RED_TEAM]: grid.splice(0, firstPlayer === RED_TEAM ? 5 : 6),
+    [RED_TEAM]: grid.splice(0, firstPlayer === RED_TEAM ? 6 : 5),
     [BLUE_TEAM]: grid.splice(0, firstPlayer === RED_TEAM ? 5 : 6),
     [BOMB]: grid.splice(0, 1)
   }
