@@ -8,5 +8,5 @@ export const COLOR_MAP = {
   [BLUE_TEAM]: '#8C9EFF',
   [RED_TEAM]: '#FF8A80',
   [BOMB]: '#424242',
-  staged: '#FFE57F'
+  staged: '#CFD8DC'
 };
