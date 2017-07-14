@@ -4,6 +4,6 @@ import * as s from './selectors';
 import * as a from './actions';
 
 export const makeGameStore = mgs;
-export const constants = a;
+export const constants = c;
 export const selectors = s;
 export const actions = a;
