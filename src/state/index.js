@@ -3,10 +3,13 @@ import sendToReciverMiddleware from './sendToRecieverMiddleware';
 
 import boardReducer from './board/reducer';
 import gameReducer from './game/reducer';
+import uiStateReducer from './game/uiState';
+
 
 const reducers = combineReducers({
   board: boardReducer,
-  game: gameReducer
+  game: gameReducer,
+  uiState: uiStateReducer
 });
 
 export const makeGameStore = (isReciever = false) => {
