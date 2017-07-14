@@ -1,11 +1,9 @@
-import constants from './constants';
-import { makeGameStore } from './state';
-import selectors from './selectors';
-import actions from './actions';
+import * as c from './constants';
+import { makeGameStore as mgs } from './state';
+import * as s from './selectors';
+import * as a from './actions';
 
-export default {
-  constants,
-  selectors,
-  makeGameStore,
-  actions
-};
+export const makeGameStore = mgs;
+export const constants = a;
+export const selectors = s;
+export const actions = a;
