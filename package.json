@@ -1,6 +1,6 @@
 {
   "name": "codenames-state",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "state for codenames game",
   "main": "./lib/index.js",
   "scripts": {
